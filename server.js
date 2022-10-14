@@ -19,7 +19,9 @@ const port = 8080
 export const server = http.createServer()
         
 server.on('request',(req,res)=>{
-    if (req.url === '/user'){
+    if (req.url === '/'){
+        res.end("server running")
+    }else if(req.url === '/user'){
         res.writeHead(200,{
             'Access-Control-Allow-Origin':"*",
             'Access-Control-Allow-Method':"OPTIONS,POST,GET",
