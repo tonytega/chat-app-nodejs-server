@@ -8,7 +8,7 @@ const apiKey = process.env.VITE_API_KEY;
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 
 // var admin = require("firebase-admin");
-import serviceAccount from './chatapp-a8732-firebase-adminsdk-g1osu-69943e98de.json'; 
+import {serviceAccount} from './serviceAccount.js'; 
 
 const app = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
