@@ -1,5 +1,3 @@
-import { initializeApp } from "firebase-admin/app";
-import { getDatabase } from "firebase/database";
 import admin  from "firebase-admin";
 import {getAuth} from 'firebase-admin/auth'
 const apiKey = process.env.VITE_API_KEY;
