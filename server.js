@@ -21,9 +21,8 @@ export const server = http.createServer()
 server.on('request',(req,res)=>{
     if (req.url === '/'){
         res.end("server running")
-    }else if('/favicon.ico'){
-        res.end('favicon')
-    }else if(req.url === '/user'){
+    }
+    else if(req.url === '/user'){
         res.writeHead(200,{
             'Access-Control-Allow-Origin':"*",
             'Access-Control-Allow-Method':"OPTIONS,POST,GET",
