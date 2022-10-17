@@ -39,5 +39,5 @@ server.on('request',(req,res)=>{
         
     }
 })
-server.listen(port,'localhost',console.log('connected'))
+server.listen(port,console.log('connected'))
 
